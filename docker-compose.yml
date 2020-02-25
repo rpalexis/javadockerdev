@@ -1,0 +1,8 @@
+version: "3"
+services:
+  javadev:
+    image: openjdk
+    working_dir: /tmp
+    volumes:
+      - ./:/tmp
+    command: bash -c "javac Main.java && java Main"
